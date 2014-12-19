@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<!--  <com.example.headerlistView.HeaderListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/HeaderListView_MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eff4ee"
+        android:divider="#000000"
+        android:dividerHeight="2dp"
+        android:padding="8dp" /> -->
+ 
+
+	<com.example.headerlistView.SegmentedRadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:orientation="horizontal"
+		android:id="@+id/segment_text"
+		android:checkedButton="@+id/button_one">
+		<RadioButton android:id="@id/button_one"
+			android:minWidth="40dip"
+			android:minHeight="33dip"
+			android:text="One"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:button="@null"
+			android:gravity="center"
+			android:textColor="#ff0000" />
+		<RadioButton android:id="@+id/button_two"
+			android:minWidth="40dip"
+			android:minHeight="33dip"
+			android:text="Two"
+			android:button="@null"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#ff0000" />
+		<RadioButton android:id="@+id/button_three"
+			android:minWidth="40dip"
+			android:minHeight="33dip"
+			android:text="Three"
+			android:button="@null"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#ff0000" />
+	</com.example.headerlistView.SegmentedRadioGroup>
+		<com.example.headerlistView.SegmentedRadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:orientation="horizontal"
+		android:id="@+id/segment_img"
+		android:checkedButton="@+id/button_add">
+			<com.example.headerlistView.CenteredRadioImageButton
+				android:id="@id/button_add"
+				android:minWidth="40dip"
+				android:minHeight="33dip"
+				android:button="@android:drawable/ic_menu_add" />
+			<com.example.headerlistView.CenteredRadioImageButton
+				android:id="@+id/button_call"
+				android:minWidth="40dip"
+				android:minHeight="33dip"
+				android:button="@android:drawable/ic_menu_call" />
+			<com.example.headerlistView.CenteredRadioImageButton
+				android:id="@+id/button_camera"
+				android:minWidth="40dip"
+				android:minHeight="33dip"
+				android:button="@android:drawable/ic_menu_camera" />
+	</com.example.headerlistView.SegmentedRadioGroup>
+</LinearLayout>
